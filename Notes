@@ -1,0 +1,29 @@
+Tokens :
+
+  Definition : Tokens are the smallest individual parts or units of the program
+
+Types :
+
+  Keywords  (The reserved or the pre-defined words which are the loaded into the IDLE)
+  Identifiers (These are the variables , function name, class names which are defined by the user while writing the code for the program)
+  Operators (These are the arithmetic, logical operations which can be performed on the variables used in the program)
+  Literal (These are the data values which are assigned to the variables in the declaration of the values) 
+
+Types of Operators :
+
+  Arithmetic (+,*,-,/,**,//,%) Example : print(8+7,8*7,8-7,8*9,8**9,8%9,8//9) Output : 15 56 1 72 134217728 8 0
+  Assignment (=,==,+=,-=,/=)
+  Comparison (!=, ==,>=,<=,<,>)
+  Logical (AND, OR, NOT)
+  Identity (IS, IS NOT) Example : a = [1,2] b = [1,2] print(a is b) print(a == b) Output : False True 
+  (The is operator search for the object at its particular memory address and doesn't check what is stored inside the memory location while the " == " operator checks for the values stored in the memory location)
+  Membership (IN, NOT IN)
+  Bit-wise (These operators perform the calculations on the binary values of the variables)
+
+Types of the Bit-wise Operators :
+
+  & - Bit-wise AND 
+  | - Bit-wise OR
+  ^ - Bit-wise 
+  << - Bit-wise Left Shift
+  >> - Bit-wise Right Shift
