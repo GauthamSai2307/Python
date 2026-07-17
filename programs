@@ -1,0 +1,23 @@
+s = "python is a high-level programming language"
+print(s.replace("python", "R"))
+print('-'.join(s))
+print(s.split('is'))
+print(s.index('g'))
+print(s[10])
+print(s.count("n",2,25))
+
+any = [23, "Gautham Sai", [1,4,2]]
+print(any[1][4], any[2][2])
+am = [1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]]
+print(am[4][1][0])
+any.append(8897)
+any.append("Python")
+print(any)
+any.extend("Python")
+print(any)
+
+lia = [1,2,23,4,4,5]
+# lia.remove(4)
+print(lia)
+lia.pop(4)
+print(lia)
