@@ -21,3 +21,21 @@ lia = [1,2,23,4,4,5]
 print(lia)
 lia.pop(4)
 print(lia)
+
+"""
+Outputs :
+
+R is a high-level programming language
+p-y-t-h-o-n- -i-s- -a- -h-i-g-h---l-e-v-e-l- -p-r-o-g-r-a-m-m-i-n-g- -l-a-n-g-u-a-g-e
+['python ', ' a high-level programming language']
+14
+a
+1
+h 2
+56
+[23, 'Gautham Sai', [1, 4, 2], 8897, 'Python']
+[23, 'Gautham Sai', [1, 4, 2], 8897, 'Python', 'P', 'y', 't', 'h', 'o', 'n']
+[1, 2, 23, 4, 4, 5]
+[1, 2, 23, 4, 5]
+
+"""
