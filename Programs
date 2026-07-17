@@ -39,3 +39,25 @@ h 2
 [1, 2, 23, 4, 5]
 
 """
+
+
+sample = [[1, 2], 'coding', [10.5, ['AI', (7, 8, 9), ['Data', 55]], 100], 'SQL', [(5, 6), ['Cloud', ['AWS', 999]], 12]]
+print(sample[4][1][1][1])
+
+
+demo = [5, ['HTML', [10, 20, ['CSS', (1.1, 2.2), 'JS']], 30], 'Python', [[100, 'AI'], ['ML', [200, 300, ['Deep Learning', 400]]], 500], (600, 700)]
+print(demo[3][1][1][2][0])
+
+
+practice = [
+    1,
+    'Python',
+    [2, 3.5, ['Java', (10, 20), ['HTML', ['CSS', 99]]]],
+    ['AI', [100, (200, [300, 'ML'])]],
+    ('End', 500)
+]
+
+99 - print(practice[2][2][2][1][1])
+ML - print(practice[3][1][1][1])
+20 - print(practice[2][2][1][1])
+['Java', (10, 20), ['HTML', ['CSS', 99]]] - print(practice[2][2])
