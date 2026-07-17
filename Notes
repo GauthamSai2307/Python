@@ -27,3 +27,65 @@ Types of the Bit-wise Operators :
   ^ - Bit-wise 
   << - Bit-wise Left Shift
   >> - Bit-wise Right Shift
+
+Date : 17-07-2026
+
+To find what type of datatype the variable is storing we need to use the keyword " type " to see the category
+To find where the variable stores in the memory we need to use the keyword " id " to find the memory address
+
+Datatypes :
+
+  Integer - int (Arithmetic Operations)
+  Decimal - float (Arithmetic Operations)
+  String - (It is a sequence of characters that are enclose in ' ', " ", ''' ''' and it is immutable)
+  Lists - (It is a collection of different datatypes like int, float, string, list inside a list, tuple inside a list and these are represented using a "[ ]" and separated by ' , ', also 	they are mutable)
+
+Methods of string datatype :
+
+  replace() --  It is used to replace old string with a new string in the program (Syntax : variable_name.replace("old string", "new string", "number of times we want to replace)) 
+  reverse() --  It is used to reverse the string					(Syntax : variable_name.rev())
+  split()	  --  It is used to split the original string into substrings 		(Syntax : variable_name.split("on what basis"))
+  join()	  --  It is used to add a new character after every substring of prog   (Syntax : 'new variable'.join(variable_name))
+  index()   --  It is used to return the position value of a character of str	(Syntax : variable_name.index('character to passed'))
+  count()	  --  It is used to count the occurance of a character in the str	(Syntax : variable_name.count('character to passed','staring range', 'ending range'))
+  indexing()--  It is used to return the substring which is present in a position (Syntax : variable_name[index number])
+  isupper() --
+  islower() --
+
+Methods of list datatype:
+
+  append()  --  It is used to add or give a new element to the existing list and it will added at the last index of the list (Syntax : variable_name.append(value))
+  extend()  --  It is used to add only iterative elements like list, tuple, dictionaries to the existing list at the end pos (Syntax : variable_name.extend(list))
+  remove()  --  It is used to remove the first occurrence of the value in the list & if it's not in the list is throws error (Syntax : variable_name.remove(value))
+  pop()	    --  It is used to remove a particular value which is present in the specified or if no value is mentioned last value is popped and if the value is not found it throw list out of range error (Syntax : variable_name.pop(value, index))
+
+Programs : 
+
+  To find what type of datatype the variable is storing we need to use the keyword " type " to see the category
+To find where the variable stores in the memory we need to use the keyword " id " to find the memory address
+
+Datatypes :
+
+Integer - int (Arithmetic Operations)
+Decimal - float (Arithmetic Operations)
+String - (It is a sequence of characters that are enclose in ' ', " ", ''' ''' and it is immutable)
+Lists - (It is a collection of different datatypes like int, float, string, list inside a list, tuple inside a list and these are represented using a "[ ]" and separated by ' , ', also 	they are mutable)
+
+Methods of string datatype :
+
+replace() --  It is used to replace old string with a new string in the program (Syntax : variable_name.replace("old string", "new string", "number of times we want to replace)) 
+reverse() --  It is used to reverse the string					(Syntax : variable_name.rev())
+split()	  --  It is used to split the original string into substrings 		(Syntax : variable_name.split("on what basis"))
+join()	  --  It is used to add a new character after every substring of prog   (Syntax : 'new variable'.join(variable_name))
+index()   --  It is used to return the position value of a character of str	(Syntax : variable_name.index('character to passed'))
+count()	  --  It is used to count the occurance of a character in the str	(Syntax : variable_name.count('character to passed','staring range', 'ending range'))
+indexing()--  It is used to return the substring which is present in a position (Syntax : variable_name[index number])
+isupper() --
+islower() --
+
+Methods of list datatype:
+
+append()  --  It is used to add or give a new element to the existing list and it will added at the last index of the list (Syntax : variable_name.append(value))
+extend()  --  It is used to add only iterative elements like list, tuple, dictionaries to the existing list at the end pos (Syntax : variable_name.extend(list))
+remove()  --  It is used to remove the first occurrence of the value in the list & if it's not in the list is throws error (Syntax : variable_name.remove(value))
+pop()	  --  It is used to remove a particular value which is present in the specified or if no value is mentioned last value is popped and if the value is not found it throw list out of 	     20range error (Syntax : variable_name.pop(value, index))
