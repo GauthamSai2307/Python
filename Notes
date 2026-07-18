@@ -1,67 +1,95 @@
+Date : 15-06-2026 (Python Introduction, Installation Process and Variables)
+
+Python was released in the year 1991 by Guido van Russom (version 0.9)
+
+What is Python ?
+
+High-level language 
+Object Oriented Programming (OOP's)
+Interpreted Language (The code will be executed line by line that's the reason python is called a Interpreted language)
+Dynamically Typed Language (No need of mentioning the kind of the datatype pass to the variable)
+
+Why is Python widely used or recommended to be used ?
+
+Easy to Learn & Understand
+Less Syntax
+Cross Platform 
+Open Source
+Wide range of Libraries
+
+Commenting of the Lines :
+
+Single Line commenting (#) - Used to explain lines in the code
+Multiple Line commenting (''' ''' OR """ """) - Used to write the explanation of multiple lines
+
+Variables and Their Rules :
+
+These are used to store the datatypes
+
+Rules : 
+
+It can start with a ( _ , small letters, capital letters, and mixing of the letters, numbers and special characters )
+It can't start with a number and special character
+The variables can't have whitespaces while being declared but instead we can use a underscore (_) to eliminate those whitespaces
+
+
+Boolean Type :
+
+
+These are used to show whether a particular condition is "True" or "False"
+
+Example : 
+
+num , num2 = 9, 89
+print(num == num2) # False
+print(num != num2) # True
+
+Multiple variables with multiple values ( add , = , )
+Multiple variable with single value ( add = = )
+
+Swapping variable values without temp variable
+
+a , b = 50, 70 
+a , b = b, a
+print(a, b)
+
+Date = 16/07/2026 (Tokens and types of tokens)
+
 Tokens :
 
-  Definition : Tokens are the smallest individual parts or units of the program
+Tokens are the smallest individual parts or units of the program
 
 Types :
 
-  Keywords  (The reserved or the pre-defined words which are the loaded into the IDLE)
-  Identifiers (These are the variables , function name, class names which are defined by the user while writing the code for the program)
-  Operators (These are the arithmetic, logical operations which can be performed on the variables used in the program)
-  Literal (These are the data values which are assigned to the variables in the declaration of the values) 
+Keywords  (The reserved or the pre-defined words which are the loaded into the IDLE)
+Identifiers (These are the variables , function name, class names which are defined by the user while writing the code for the program)
+Operators (These are the arithmetic, logical operations which can be performed on the variables used in the program)
+Literal (These are the data values which are assigned to the variables in the declaration of the values) 
 
 Types of Operators :
 
-  Arithmetic (+,*,-,/,**,//,%) Example : print(8+7,8*7,8-7,8*9,8**9,8%9,8//9) Output : 15 56 1 72 134217728 8 0
-  Assignment (=,==,+=,-=,/=)
-  Comparison (!=, ==,>=,<=,<,>)
-  Logical (AND, OR, NOT)
-  Identity (IS, IS NOT) Example : a = [1,2] b = [1,2] print(a is b) print(a == b) Output : False True 
-  (The is operator search for the object at its particular memory address and doesn't check what is stored inside the memory location while the " == " operator checks for the values stored in the memory location)
-  Membership (IN, NOT IN)
-  Bit-wise (These operators perform the calculations on the binary values of the variables)
+Arithmetic (+,*,-,/,**,//,%) Example : print(8+7,8*7,8-7,8*9,8**9,8%9,8//9) Output : 15 56 1 72 134217728 8 0
+Assignment (=,==,+=,-=,/=)
+Comparison (!=, ==,>=,<=,<,>)
+Logical (AND, OR, NOT)
+
+Identity (IS, IS NOT) Example : a = [1,2] b = [1,2] print(a is b) print(a == b) Output : False True 
+(The is operator search for the object at its particular memory address and doesn't check what is stored inside the memory location while the " == " operator checks for the values stored in the memory location)
+
+Membership (IN, NOT IN)
+Bit-wise (These operators perform the calculations on the binary values of the variables)
 
 Types of the Bit-wise Operators :
 
-  & - Bit-wise AND 
-  | - Bit-wise OR
-  ^ - Bit-wise 
-  << - Bit-wise Left Shift
-  >> - Bit-wise Right Shift
+& - Bit-wise AND 
+| - Bit-wise OR
+^ - Bit-wise 
+<< - Bit-wise Left Shift
+>> - Bit-wise Right Shift
 
-Date : 17-07-2026
+Date = 17-07-2026 (Datatypes and it's types)
 
 To find what type of datatype the variable is storing we need to use the keyword " type " to see the category
-To find where the variable stores in the memory we need to use the keyword " id " to find the memory address
-
-Datatypes :
-
-  Integer - int (Arithmetic Operations)
-  Decimal - float (Arithmetic Operations)
-  String - (It is a sequence of characters that are enclose in ' ', " ", ''' ''' and it is immutable)
-  Lists - (It is a collection of different datatypes like int, float, string, list inside a list, tuple inside a list and these are represented using a "[ ]" and separated by ' , ', also 	they are mutable)
-
-Methods of string datatype :
-
-  replace() --  It is used to replace old string with a new string in the program (Syntax : variable_name.replace("old string", "new string", "number of times we want to replace)) 
-  reverse() --  It is used to reverse the string					(Syntax : variable_name.rev())
-  split()	  --  It is used to split the original string into substrings 		(Syntax : variable_name.split("on what basis"))
-  join()	  --  It is used to add a new character after every substring of prog   (Syntax : 'new variable'.join(variable_name))
-  index()   --  It is used to return the position value of a character of str	(Syntax : variable_name.index('character to passed'))
-  count()	  --  It is used to count the occurance of a character in the str	(Syntax : variable_name.count('character to passed','staring range', 'ending range'))
-  indexing()--  It is used to return the substring which is present in a position (Syntax : variable_name[index number])
-  isupper() --
-  islower() --
-
-Methods of list datatype:
-
-  append()  --  It is used to add or give a new element to the existing list and it will added at the last index of the list (Syntax : variable_name.append(value))
-  extend()  --  It is used to add only iterative elements like list, tuple, dictionaries to the existing list at the end pos (Syntax : variable_name.extend(list))
-  remove()  --  It is used to remove the first occurrence of the value in the list & if it's not in the list is throws error (Syntax : variable_name.remove(value))
-  pop()	    --  It is used to remove a particular value which is present in the specified or if no value is mentioned last value is popped and if the value is not found it throw list out of range error (Syntax : variable_name.pop(value, index))
-
-Programs : 
-
-  To find what type of datatype the variable is storing we need to use the keyword " type " to see the category
 To find where the variable stores in the memory we need to use the keyword " id " to find the memory address
 
 Datatypes :
@@ -89,3 +117,51 @@ append()  --  It is used to add or give a new element to the existing list and i
 extend()  --  It is used to add only iterative elements like list, tuple, dictionaries to the existing list at the end pos (Syntax : variable_name.extend(list))
 remove()  --  It is used to remove the first occurrence of the value in the list & if it's not in the list is throws error (Syntax : variable_name.remove(value))
 pop()	  --  It is used to remove a particular value which is present in the specified or if no value is mentioned last value is popped and if the value is not found it throw list out of 	     20range error (Syntax : variable_name.pop(value, index))
+
+Write 3 complex indexing programs (Assessment) 
+
+sample = [[1, 2], 'coding', [10.5, ['AI', (7, 8, 9), ['Data', 55]], 100], 'SQL', [(5, 6), ['Cloud', ['AWS', 999]], 12]]
+print(sample[4][1][1][1])
+
+
+demo = [5, ['HTML', [10, 20, ['CSS', (1.1, 2.2), 'JS']], 30], 'Python', [[100, 'AI'], ['ML', [200, 300, ['Deep Learning', 400]]], 500], (600, 700)]
+print(demo[3][1][1][2][0])
+
+
+practice = [
+    1,
+    'Python',
+    [2, 3.5, ['Java', (10, 20), ['HTML', ['CSS', 99]]]],
+    ['AI', [100, (200, [300, 'ML'])]],
+    ('End', 500)
+]
+
+99 - print(practice[2][2][2][1][1])
+ML - print(practice[3][1][1][1])
+20 - print(practice[2][2][1][1])
+['Java', (10, 20), ['HTML', ['CSS', 99]]] - print(practice[2][2])
+
+
+Date : 18-07-2026 (Tuples & Dictionaries)
+
+Tuple : (It is a collection of different datatypes like int, float, string, list inside a list, tuple inside a list and these are represented using a "( )" and separated by ' , ', also 	they are immutable)
+Dictionaries : (It is a collection of different datatypes like int, float, string, list, tuple and these are represented using a "{ }", key and values are separated by ' : ', all the things present on the left side are called the keys and the things which are present on the right side are values , also they are immutable)
+
+Methods of tuple datatype :
+
+count() -- Syntax : variable_name.count(item)
+index() -- Syntax : variable_name.index(item)
+
+
+Declaring a Dictionary (Syntax) :
+
+dec = { 1 : "gautham", 'surname' : "K", "sal" : 150000, 2 : 90 } # Used as databases
+
+Methods of dictionary datatype :
+ 
+keys  -- It is used to access all the keys which are defined in the dictionary and returns the output in the form of tuple (Syntax : variable_name.keys())
+values -- It is used to access all the values which are stored in the keys of the dictionary and returns the output in the form of tuple (Syntax : variable_name.values())
+items -- It is used to return or display all the pairs of keys and values present in the dictionary and returns the output in the form of tuple (Syntax : variable_name.items())
+update -- It is used to modify a exsisting value or add a value inside the dictionary (Syntax : variable_name.update({'key name' : 'value'}))
+clear  -- It is used remove all the pairs of keys and values from a dictionary (Syntax : variable_name.clear())
+get  -- It is used to retrive a value of a particular key and returns the value stored in the key (Syntax : variable_name.get('key value'))
