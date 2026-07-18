@@ -1,3 +1,4 @@
+# List and Strings
 s = "python is a high-level programming language"
 print(s.replace("python", "R"))
 print('-'.join(s))
@@ -55,3 +56,43 @@ practice = [1,'Python',[2, 3.5, ['Java', (10, 20), ['HTML', ['CSS', 99]]]], ['AI
 # output - ML - print(practice[3][1][1][1])
 # output - 20 - print(practice[2][2][1][1])
 # output - ['Java', (10, 20), ['HTML', ['CSS', 99]]] - print(practice[2][2])
+
+# Tuples and Dictionaries
+
+g = (1,'gautham',[3,4],("Data Science", 142))
+print(type(g))
+print(g.index([3,4]))
+print(g.count('Data Science'), g.count(1))
+
+# Indexing in Tuple Datatype
+
+am = (1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90])
+print(am[2][1][0])
+
+dec = { 1 : "gautham", 'surname' : "K", 'sal' : 150000, 2 : 90 }
+print(dec.keys())
+print(dec.values())
+print(dec.items())
+dec.update({"Position" : "Senior Data Scientist"})
+# another possibility of updating a value inside the dictionary 
+# dec ['sal'] = 200000
+print(dec)
+det = { 1 : "gautham", 'surname' : "K", 'sal' : 150000, 2 : 90 }
+print(det[1])
+print(det.clear())
+
+"""
+Outputs :
+
+<class 'tuple'>
+2
+0 1
+python
+dict_keys([1, 'surname', 'sal', 2])
+dict_values(['gautham', 'K', 150000, 90])
+dict_items([(1, 'gautham'), ('surname', 'K'), ('sal', 150000), (2, 90)])
+{1: 'gautham', 'surname': 'K', 'sal': 150000, 2: 90, 'Position': 'Senior Data Scientist'}
+gautham
+None
+
+"""
