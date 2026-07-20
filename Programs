@@ -96,3 +96,103 @@ gautham
 None
 
 """
+
+# Set operation and methods And Type Conversions 
+
+gau, tham = {1,2,3,8}, {} #creating a set with values and empty or without values inside it
+print(type(gau), gau)
+gau.update([9])
+print(gau)
+
+gau.add(10)
+print(gau)
+
+gau.remove(9)
+print(gau)
+
+# gau.remove(90)
+# print(gau)
+
+gau.discard(10)
+print(gau)
+
+gaut = {99,1,26}
+gaut.pop()
+print(gaut)
+
+g = {1,2,3}
+s = {5,2,6}
+
+print(g | s, g.union(s))
+print(g.intersection(s), g & s)
+print(g.difference(s),g - s)
+
+nine = 69
+print(type(nine))
+s1 = str(nine)
+s2 = float(nine)
+print(s1, s2, type(s1), type(s2))
+
+nin = 69.8
+print(type(nin))
+d1 = str(nin)
+d2 = int(nin)
+print(s1, s2, type(d1), type(d2))
+
+a,b = "98","102.5"
+print(type(a), type(b))
+w, z = int(a), float(b)
+print(type(w), type(z))
+
+am = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+print(type(am))
+y = list(am)
+print(y, type(y))
+
+af = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+h = tuple(af)
+print(h, type(h))
+
+
+num = [9,8,7,6,5,4,3,2,1]
+print(type(num))
+k = str(num)
+print(k, type(k))
+
+l = tuple(num)
+print(l,type(l))
+
+
+nums = (9,8,7,6,5,4,3,2,1)
+i,j = str(nums), list(nums)
+print(i,type(i))
+print(j, type(j))
+
+''' 
+Outputs :
+
+<class 'set'> {8, 1, 2, 3}
+{1, 2, 3, 8, 9}
+{1, 2, 3, 8, 9, 10}
+{1, 2, 3, 8, 10}
+{1, 2, 3, 8}
+{26, 99}
+{1, 2, 3, 5, 6} {1, 2, 3, 5, 6}
+{2} {2}
+{1, 3} {1, 3}
+<class 'int'>
+69 69.0 <class 'str'> <class 'float'>
+<class 'float'>
+69 69.0 <class 'str'> <class 'int'>
+<class 'str'> <class 'str'>
+<class 'int'> <class 'float'>
+<class 'str'>
+['1', ',', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '[', '2', ',', '[', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '9', ']', ',', '4', ']', ',', "'", 'j', 'a', 'v', 'a', "'", ',', '[', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '[', '5', '6', ',', '7', '8', ']', ',', "'", 'j', 'a', 'v', 'a', "'", ',', '9', '0', ']'] <class 'list'>
+('1', ',', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '[', '2', ',', '[', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '9', ']', ',', '4', ']', ',', "'", 'j', 'a', 'v', 'a', "'", ',', '[', "'", 'p', 'y', 't', 'h', 'o', 'n', "'", ',', '[', '5', '6', ',', '7', '8', ']', ',', "'", 'j', 'a', 'v', 'a', "'", ',', '9', '0', ']') <class 'tuple'>
+<class 'list'>
+[9, 8, 7, 6, 5, 4, 3, 2, 1] <class 'str'>
+(9, 8, 7, 6, 5, 4, 3, 2, 1) <class 'tuple'>
+(9, 8, 7, 6, 5, 4, 3, 2, 1) <class 'str'>
+[9, 8, 7, 6, 5, 4, 3, 2, 1] <class 'list'>
+
+'''
