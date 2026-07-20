@@ -165,3 +165,84 @@ items -- It is used to return or display all the pairs of keys and values presen
 update -- It is used to modify a exsisting value or add a value inside the dictionary (Syntax : variable_name.update({'key name' : 'value'}))
 clear  -- It is used remove all the pairs of keys and values from a dictionary (Syntax : variable_name.clear())
 get  -- It is used to retrive a value of a particular key and returns the value stored in the key (Syntax : variable_name.get('key value'))
+
+# Set operation and methods And Type Conversions 
+
+Set -- It is an unordered collection of elements and it doesn't allow duplicate values inside it , they are mutable and they are represented in "{ }"
+
+Methods of set datatype :
+
+update -- It is used to add new elements or values to the declared set (Syntax : variable_name.update([values]))
+add -- It is used to a new elements or values to the declared set (Syntax : variable_name.add(value))
+remove -- It is used to remove a element from the declared set and in case if the value is not present in the set it throws KeyError(Syntax : variable_name.remove(value))
+discard -- It is used to remove a element from the declared set and in case if the value is not present in the set it doesn't throw an error(Syntax : variable_name.discard(value))
+pop -- It is used to remove a element from the declared set (i.e random value)and in case if the value is mentioned it throws PositionArgumentalError(Syntax : variable_name.pop())
+
+
+Operation in the set datatype :
+
+
+Union -- It is used to add or combine two sets with set values but does not allow duplicates in the combined output (Syntax : set1.union(set2) or set1 | set2)
+Intersection -- It is used to show the common set values present in two sets (Syntax : set1.intersection(set2) or set1 & set2)
+Difference -- It is used to show the difference between two sets or it returns set values which are present in the first set but not in the second set (Syntax : set1.difference(set2) or set1 - set2)
+
+Type Conversions :
+
+The process of converting from one datatype to another is called type conversion there are two types of type conversion one is implicit and explicit type conversion 
+
+Explicit Conversion :
+
+Integer () : 
+
+'''
+variable = str(integer)
+nine = 69
+print(type(nine))
+s1 = str(nine) # For Converting integer to string
+s2 = float(nine) # For converting integer to float
+print(s1, s2, type(s1), type(s2))
+'''
+
+Float() :
+
+'''
+nin = 69.8
+print(type(nin))
+d1 = str(nin) # For converting float to string
+d2 = float(nin) # For converting float to integer
+print(s1, s2, type(d1), type(d2))
+'''
+
+String() :
+
+Integer -- int(value) # it can only convert the integer values which are individually specifies but if they are present inside a sentence it throws and error
+Float -- float(value) # it can only convert the float values which are individually specifies but if they are present inside a sentence it throws and error
+
+Example :
+'''
+a,b = "98","102.5"
+print(type(a), type(b))
+w, z = int(a), float(b)
+print(type(w), type(z))
+'''
+
+List -- list(value)
+Tuple -- tuple(value)
+
+Example :
+
+'''
+am = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+print(type(am))
+y = list(am)
+print(y, type(y))
+
+af = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+h = tuple(af)
+print(h, type(h))
+
+'''
+List :
+
+string -- str(value) 
+tuple -- tuple(value)
