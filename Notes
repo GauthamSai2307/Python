@@ -246,3 +246,71 @@ List :
 
 string -- str(value) 
 tuple -- tuple(value)
+
+Example :
+
+am = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+print(type(am))
+y = list(am)
+print(y, type(y))
+
+af = "1,'python',[2,['python',9],4],'java',['python',[56,78],'java',90]"
+h = tuple(af)
+print(h, type(h))
+
+List :
+
+string -- str(value) 
+tuple -- tuple(value)
+
+Tuple :
+
+string -- str(value)
+list -- list(value)
+
+Date : 21-07-2026
+
+Input Formatting :
+
+Integer : variable_name = int(input()) # it takes integer data as input at runtime 
+String : variable_name = input() # it takes string data as input at runtime and it accepts list, tuple, dictionaries, integers and float values it doesn't throw an error
+List : variable_name = list(map(int,input().split())) # for integer values and variable_name = input().split() # for string values
+Tuple : variable_name = tuple(map(int,input().split()))
+Dictionary : 
+
+Date : 22-07-2026
+
+Output Formatting :
+
+Comma separation (,) -- the elements in the print statement are separated by (',')
+
+F-String (Doc-String) -- (Syntax : print(f'matter {varible_name} matter {variable_name}))
+Example 	      -- print(f'Welcome {name} your age is {age}')
+
+Modulus Operator (%) -- ( %s it accepts strings, digits and float , %d it accepts digits and float , %f it accepts digits and float)
+
+.format() method -- (syntax -- print('name : {}' .format(name))
+
+Statements :
+
+Statements are classified into 3 types : 1) Conditional 2) Control 3) Looping 
+
+Conditional Statements are used to check the conditions and perform a certain operation
+and they are classified into 4 types : 1) if 2) if-else 3) else-if and 4) nested if
+
+Control Statements are used to control the working flow of the conditional and the looping statements and few of them are 1) break 2) continue 3) pass
+
+Looping Statements are used when an operation must be performed for certain no of times and don't need to write for several times they are divided into 2 types : 1) for and 2) while
+
+Conditional Statements 
+
+if  : It is used to check a particular statement is TRUE or FALSE and only if the condition or the statement is true it performs the block of code written inside it. 
+syntax -- if (variable (condition) value): 
+		body
+
+
+if-else : It is used to check a particular statement is TRUE or FALSE and only if the condition or the statement is true it performs the if statements block of code written inside it or it executes the else statements block of code written inside it.
+syntax : if (variable (condition) value): 
+		body
+	 else :
+		body
